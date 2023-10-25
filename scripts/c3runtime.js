@@ -4196,21 +4196,18 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Mouse.Acts.SetCursor,
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
 		C3.Plugins.System.Cnds.Else,
-		C3.Plugins.System.Acts.ToggleBoolVar,
-		C3.Plugins.System.Acts.Wait,
-		C3.Plugins.System.Cnds.CompareBoolVar,
-		C3.Plugins.Sprite.Acts.SetAnim,
-		C3.Plugins.Browser.Acts.CancelFullScreen,
-		C3.Plugins.Browser.Acts.RequestFullScreen,
 		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.Audio.Acts.StopAll,
+		C3.Plugins.System.Acts.ToggleBoolVar,
 		C3.Plugins.System.Cnds.OnLayoutEnd,
 		C3.Plugins.Sprite.Acts.SetVisible,
 		C3.Plugins.System.Acts.SetLayerOpacity,
-		C3.Plugins.System.Acts.SetVar,
-		C3.Plugins.Arr.Exps.Back,
 		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.System.Acts.Wait,
+		C3.Plugins.Arr.Exps.Back,
 		C3.Plugins.Sprite.Acts.SetOpacity,
 		C3.Plugins.Arr.Acts.SetSize,
 		C3.Plugins.System.Cnds.While,
@@ -4411,9 +4408,6 @@ function or(l, r)
 self.C3_ExpressionFuncs = [
 		() => 1,
 		() => 0,
-		() => 0.2,
-		() => "open",
-		() => "close",
 		() => "",
 		() => 30,
 		() => 100,
@@ -4426,8 +4420,8 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => n0.ExpObject();
 		},
-		() => 50,
 		() => 16,
+		() => 50,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => Math.floor(f0(0, 16));
