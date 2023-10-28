@@ -4298,6 +4298,7 @@ self.C3_JsPropNameTable = [
 	{dogruText: 0},
 	{yanlisText: 0},
 	{Sprite: 0},
+	{BtnTekrarOyna: 0},
 	{Butonlar: 0},
 	{dy: 0},
 	{oyunButon: 0},
